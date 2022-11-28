@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		49FA04AB29301EDE00A38BF1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49FA04AA29301EDE00A38BF1 /* main.cpp */; };
+		49FA04B329301F3800A38BF1 /* getOneRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49FA04B129301F3800A38BF1 /* getOneRandom.cpp */; };
+		49FA04B629301F9300A38BF1 /* maxfunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49FA04B429301F9300A38BF1 /* maxfunction.cpp */; };
+		49FA04B929301FD700A38BF1 /* Payoff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49FA04B729301FD700A38BF1 /* Payoff.cpp */; };
+		49FA04BC293020B900A38BF1 /* simpleMC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49FA04BA293020B900A38BF1 /* simpleMC.cpp */; };
+		49FA04BF293020FB00A38BF1 /* Vanilla.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49FA04BD293020FB00A38BF1 /* Vanilla.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		49E5FDBE29356D4200EE4B5D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		49FA04A729301EDE00A38BF1 /* OOP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OOP; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FA04AA29301EDE00A38BF1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		49FA04B129301F3800A38BF1 /* getOneRandom.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = getOneRandom.cpp; sourceTree = "<group>"; };
+		49FA04B229301F3800A38BF1 /* getOneRandom.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = getOneRandom.hpp; sourceTree = "<group>"; };
+		49FA04B429301F9300A38BF1 /* maxfunction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = maxfunction.cpp; sourceTree = "<group>"; };
+		49FA04B529301F9300A38BF1 /* maxfunction.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = maxfunction.hpp; sourceTree = "<group>"; };
+		49FA04B729301FD700A38BF1 /* Payoff.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Payoff.cpp; sourceTree = "<group>"; };
+		49FA04B829301FD700A38BF1 /* Payoff.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Payoff.hpp; sourceTree = "<group>"; };
+		49FA04BA293020B900A38BF1 /* simpleMC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simpleMC.cpp; sourceTree = "<group>"; };
+		49FA04BB293020B900A38BF1 /* simpleMC.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simpleMC.hpp; sourceTree = "<group>"; };
+		49FA04BD293020FB00A38BF1 /* Vanilla.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vanilla.cpp; sourceTree = "<group>"; };
+		49FA04BE293020FB00A38BF1 /* Vanilla.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vanilla.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +73,18 @@
 		49FA04A929301EDE00A38BF1 /* OOP */ = {
 			isa = PBXGroup;
 			children = (
+				49FA04B829301FD700A38BF1 /* Payoff.hpp */,
+				49FA04B729301FD700A38BF1 /* Payoff.cpp */,
 				49FA04AA29301EDE00A38BF1 /* main.cpp */,
+				49FA04B129301F3800A38BF1 /* getOneRandom.cpp */,
+				49FA04B229301F3800A38BF1 /* getOneRandom.hpp */,
+				49FA04B429301F9300A38BF1 /* maxfunction.cpp */,
+				49FA04B529301F9300A38BF1 /* maxfunction.hpp */,
+				49FA04BA293020B900A38BF1 /* simpleMC.cpp */,
+				49FA04BB293020B900A38BF1 /* simpleMC.hpp */,
+				49FA04BD293020FB00A38BF1 /* Vanilla.cpp */,
+				49FA04BE293020FB00A38BF1 /* Vanilla.hpp */,
+				49E5FDBE29356D4200EE4B5D /* README.md */,
 			);
 			path = OOP;
 			sourceTree = "<group>";
@@ -119,7 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49FA04B929301FD700A38BF1 /* Payoff.cpp in Sources */,
+				49FA04BF293020FB00A38BF1 /* Vanilla.cpp in Sources */,
+				49FA04B329301F3800A38BF1 /* getOneRandom.cpp in Sources */,
+				49FA04BC293020B900A38BF1 /* simpleMC.cpp in Sources */,
 				49FA04AB29301EDE00A38BF1 /* main.cpp in Sources */,
+				49FA04B629301F9300A38BF1 /* maxfunction.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
