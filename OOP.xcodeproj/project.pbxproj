@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49CB664E293E9D590025FE2A /* payoffBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49CB664C293E9D590025FE2A /* payoffBridge.cpp */; };
 		49FA04AB29301EDE00A38BF1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49FA04AA29301EDE00A38BF1 /* main.cpp */; };
 		49FA04B329301F3800A38BF1 /* getOneRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49FA04B129301F3800A38BF1 /* getOneRandom.cpp */; };
 		49FA04B629301F9300A38BF1 /* maxfunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49FA04B429301F9300A38BF1 /* maxfunction.cpp */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		49CB664C293E9D590025FE2A /* payoffBridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = payoffBridge.cpp; sourceTree = "<group>"; };
+		49CB664D293E9D590025FE2A /* payoffBridge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = payoffBridge.hpp; sourceTree = "<group>"; };
 		49E5FDBE29356D4200EE4B5D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		49FA04A729301EDE00A38BF1 /* OOP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OOP; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FA04AA29301EDE00A38BF1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 				49FA04B829301FD700A38BF1 /* Payoff.hpp */,
 				49FA04B729301FD700A38BF1 /* Payoff.cpp */,
 				49FA04AA29301EDE00A38BF1 /* main.cpp */,
+				49CB664C293E9D590025FE2A /* payoffBridge.cpp */,
+				49CB664D293E9D590025FE2A /* payoffBridge.hpp */,
 				49FA04B129301F3800A38BF1 /* getOneRandom.cpp */,
 				49FA04B229301F3800A38BF1 /* getOneRandom.hpp */,
 				49FA04B429301F9300A38BF1 /* maxfunction.cpp */,
@@ -149,6 +154,7 @@
 				49FA04B929301FD700A38BF1 /* Payoff.cpp in Sources */,
 				49FA04BF293020FB00A38BF1 /* Vanilla.cpp in Sources */,
 				49FA04B329301F3800A38BF1 /* getOneRandom.cpp in Sources */,
+				49CB664E293E9D590025FE2A /* payoffBridge.cpp in Sources */,
 				49FA04BC293020B900A38BF1 /* simpleMC.cpp in Sources */,
 				49FA04AB29301EDE00A38BF1 /* main.cpp in Sources */,
 				49FA04B629301F9300A38BF1 /* maxfunction.cpp in Sources */,

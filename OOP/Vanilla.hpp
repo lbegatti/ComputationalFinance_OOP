@@ -14,18 +14,23 @@
 
 #pragma once
 #include "Payoff.hpp"
+#include "payoffBridge.hpp"
 
 class VanillaOption
 {
 public:
-    VanillaOption(double expiry,Payoff& thePayoff);
+    VanillaOption(double expiry, const PayoffBridge& thePayoff);
     double getExpiry() const; //getter
     double optionPayoff(double spot) const;
-    ~VanillaOption(); // Destructor
-    VanillaOption(const VanillaOption& original); // copy constructor
-    VanillaOption& operator=(const VanillaOption& original); // Assignment operator
+    
+    // The rule of 5 --> the PayoffBridge memory takes care of this memory management.
+//    ~VanillaOption(); // Destructor
+//    VanillaOption(const VanillaOption& original); // copy constructor
+//    VanillaOption& operator=(const VanillaOption& original); // Assignment operator
+//    VanillaOption(VanillaOption&& original); // Move Copy Constructor -> rvalue reference
+//    VanillaOption& operator=(VanillaOption&& original); // Move Assignment Operator
 private:
     double expiry; // holds expiry
-    Payoff* thePayoffPtr; //reference variable to a payoff.
+    PayoffBridge thePayoff; // PayoffBridge that does the memory mgmt 
     
 };
