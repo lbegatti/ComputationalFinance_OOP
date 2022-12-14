@@ -15,11 +15,12 @@
 #pragma once
 #include "Payoff.hpp"
 #include "payoffBridge.hpp"
+#include "Wrapper.h"
 
 class VanillaOption
 {
 public:
-    VanillaOption(double expiry, const PayoffBridge& thePayoff);
+    VanillaOption(double expiry, const Wrapper<Payoff>& thePayoff);
     double getExpiry() const; //getter
     double optionPayoff(double spot) const;
     
@@ -31,6 +32,6 @@ public:
 //    VanillaOption& operator=(VanillaOption&& original); // Move Assignment Operator
 private:
     double expiry; // holds expiry
-    PayoffBridge thePayoff; // PayoffBridge that does the memory mgmt 
+    Wrapper<Payoff> thePayoff; // General memory mgmt -> PayoffBridge via templating
     
 };

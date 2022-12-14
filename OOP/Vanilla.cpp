@@ -9,7 +9,7 @@
 #include <iostream>
 
 // Constructor
-VanillaOption::VanillaOption(double expiry_, const PayoffBridge& thePayoff_) : expiry(expiry_), thePayoff(thePayoff_){
+VanillaOption::VanillaOption(double expiry_, const Wrapper<Payoff>& thePayoff_) : expiry(expiry_), thePayoff(thePayoff_){
     //thePayoffPtr = thePayoff_.clone(); the PayoffBridge does that for us
 }
 
@@ -20,6 +20,9 @@ double VanillaOption::getExpiry() const {
 
 double VanillaOption::optionPayoff(double spot) const {
     return thePayoff -> operator()(spot); // structure deference operator
+    
+    // alternative
+    // return (*thePayoff)(spot);
 }
 
 //VanillaOption::~VanillaOption(){
